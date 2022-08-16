@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+form button {
+    display: block;
+    width: min-content;
+    margin-top: 10px;
+}
+
+#field {
+    display: grid;
+    grid-template-columns: repeat(8, 40px)
+}
+
+button:not([type="submit"]) {
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button.bomb,
+button.flag {
+    background-size: cover;
+    background-position: center;
+}
+
+button.bomb {
+    background-image: url('./img/bomb.svg');
+}
+
+button.flag {
+    background-image: url('./img/flag.svg');
+}
